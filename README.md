@@ -1,2 +1,2 @@
-# curl
+# Solar cURL
 Simple cURL wrapper.
