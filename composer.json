@@ -1,0 +1,19 @@
+{
+    "name": "solar/curl",
+    "description": "Basic cURL wrapper.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Solar\\Curl\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Travis Miller",
+            "email": "travis@twooutrally.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
