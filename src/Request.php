@@ -156,6 +156,18 @@ class Request
     }
 
     /**
+     * @param string $key
+     * @param string $value
+     * @return $this
+     */
+    public function addHeader(string $key, string $value): self
+    {
+        $this->headers[$key] = $value;
+
+        return $this;
+    }
+
+    /**
      * @param string $url
      * @param array $parameters
      * @return bool|Response
@@ -164,6 +176,17 @@ class Request
     public function delete(string $url, array $parameters)
     {
         return $this->execute(static::REQUEST_TYPE_DELETE, $url, $parameters);
+    }
+
+    /**
+     * @param string $key
+     * @return $this
+     */
+    public function deleteHeader(string $key): self
+    {
+        unset($this->headers[$key]);
+
+        return $this;
     }
 
     /**
